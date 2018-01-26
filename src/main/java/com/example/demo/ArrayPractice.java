@@ -21,7 +21,7 @@ public class ArrayPractice {
             }else{
                 favorite_movies.add(favorite_answer);
             }
-        } while (continue_answer.equals("Y"));
+        } while (continue_answer.equals("Y") || continue_answer.equals("y"));
         return favorite_movies;
     }
 }
