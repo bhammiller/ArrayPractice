@@ -18,10 +18,17 @@ public class ArrayPractice {
             continue_answer = keyboard.nextLine();
             if (type_answer.equals("book")){
                 favorite_books.add(favorite_answer);
-            }else{
+            }else if(type_answer.equals("movie")){
                 favorite_movies.add(favorite_answer);
             }
         } while (continue_answer.equals("Y") || continue_answer.equals("y"));
+        Collections.sort(favorite_movies);
+        /*
+        for (int i = 0; i < favorite_movies.length; i++){
+            System.out.println(favorite_movies[i]);
+
+        }*/
         return favorite_movies;
+
     }
 }
