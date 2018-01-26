@@ -23,11 +23,10 @@ public class ArrayPractice {
             }
         } while (continue_answer.equals("Y") || continue_answer.equals("y"));
         Collections.sort(favorite_movies);
-        /*
-        for (int i = 0; i < favorite_movies.length; i++){
-            System.out.println(favorite_movies[i]);
+        for (Object movie:favorite_movies){
+            System.out.println(movie);
 
-        }*/
+        }
         return favorite_movies;
 
     }
